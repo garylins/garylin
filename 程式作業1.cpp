@@ -20,14 +20,14 @@ int main()
     printf("EMPTY ROOT TIME:%.3f\n",(t2-t1)/(double)(CLOCKS_PER_SEC));//CLOCKS_PER_SEC:1000,每一秒有幾個clocks 
     c=t2-t1;
     
-   /* t1 = clock(); //取得目前的時鐘?
-	for(i=0;i<1000000000;++i)
+    t1 = clock(); //取得目前的時鐘?
+	for(i=0;i<100000000;++i)
 	{
 		a=sin(b);
 	}
 	t2 = clock();
 	d=t2-t1;
-    printf("one sin() tine:%.3f\n",(d-c)/(double)(CLOCKS_PER_SEC)); */ 
+    printf("one sin() tine:%.3f\n",(d-c)/(double)(CLOCKS_PER_SEC)); 
      
     t1 = clock(); 
 	for(i=0;i<100000000;++i)
